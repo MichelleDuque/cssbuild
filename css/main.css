@@ -1,0 +1,89 @@
+/* Reset all of the defaults to 0 so that you cran write your OWN css */
+/* Don't rely on the built-in */
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 8px;
+}
+
+article{
+    width: 25%;
+    border: thin solid white;
+    border-radius: 8px;
+
+    display: inline-block;
+    margin: 10px 12px;
+
+    text-align: left;
+}
+
+main{
+    text-align: center;
+}
+
+article > h2{
+    color: grey;
+    padding: 4px 8px;
+}
+
+article:first-of-type{
+    border: 2px solid grey;
+}
+
+#inprogress{
+    border: 2px solid red;
+}
+
+#done{
+    border: 2px solid green;
+}
+
+#inprogress h2{
+    color: red;
+}
+
+#done h2{
+    color: green;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+/* ul li:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+.todos li:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.inprogress li:nth-child(odd){
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.done li:nth-child(odd){
+    background-color: rgba(0, 255, 0, 0.5);
+}
